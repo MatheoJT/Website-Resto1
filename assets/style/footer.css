@@ -1,0 +1,27 @@
+/* Footer styles */
+footer {
+    background-color: #111111;
+    padding: 20px;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 0.8rem;
+
+    
+}
+
+footer li {
+    margin-left: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f2f2f2;
+
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+
+

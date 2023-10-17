@@ -1,0 +1,36 @@
+{
+    "desserts": {
+        "display": "Desserts du moment",
+        "icon": "/assets/img/desserts.png",
+        "price": "4€00",
+        "content": {
+            "1": {
+                "display": "Gâteau au chocolat"
+            }
+        }
+    },
+
+    "box": {
+        "display": "Box à partager",
+        "icon": "/assets/img/box.png",
+        "price": "4€00",
+        "content": {
+            "1": {
+                "display": "BOX 1 : Assortiment de desserts",
+                "description": "Un mélange de délices sucrés"
+            },
+            "2": {
+                "display": "BOX 2 : Surprise gourmande"
+            },
+            "3": {
+                "display": "BOX 3 : Douceurs exquises"
+            },
+            "4": {
+                "display": "Assiette de mini-pâtisseries",
+                "price": "3€00"
+            }
+        }
+    }
+
+    
+}

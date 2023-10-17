@@ -1,0 +1,20 @@
+RewriteEngine On
+
+# Redirection vers HTTPS
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Activation de HSTS
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# Redirection de www vers la version non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Gestion des erreurs 404
+ErrorDocument 404 /
+
+# Désactivation de l'indexage des répertoires
+Options -Indexes

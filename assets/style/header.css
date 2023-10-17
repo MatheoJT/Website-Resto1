@@ -1,0 +1,145 @@
+.alert { 
+    display: none;
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background: #111;
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.alert .navigation1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.alert .navigation1 li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.alert .navigation li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.alert p {
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.alert i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #111111;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; 
+    font-size: 0.8em;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 10px; 
+}
+
+header img {
+    width: 10%;
+    padding: 10px 50px 10px 0px;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+
+
+
+
+header .hamburger {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    transition: color 0.3s ease;
+   
+}
+
+nav a:hover {
+    color: #96440d;
+}
+
+
+
+
+/* Pour les appareils mobiles et les écrans de petite taille */
+@media (max-width: 767px) {
+
+    
+    header h1 {
+        font-size: 1.5rem; /* Réduire la taille du titre */
+        margin-left: 5px; /* Réduire la marge à gauche */
+    }
+    
+    header img {
+        width: 40%; /* Réduire la taille du logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Afficher les éléments de navigation en colonne */
+    }
+
+    nav li {
+        margin-left: 0; /* Supprimer la marge à gauche */
+        margin-bottom: 10px; /* Ajouter un espacement entre les éléments de navigation */
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+}
